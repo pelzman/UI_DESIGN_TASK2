@@ -1,4 +1,8 @@
-
+import Artboard from "../../assets/Artboard.svg"
+import UserClose from "../../assets/User_Close.svg"
+import UserCheck from "../../assets/User_Check.svg"
+import UserVoice from "../../assets/User_Voice.svg"
+import Mail from "../../assets/Mail.svg"
 
 export const DropMenus = [
 
@@ -42,18 +46,23 @@ export const DropMenus = [
 
 export const Icons = [
     {
-        src: "Artboard.svg"
+        src: Artboard
+        
     },
     {
-        src: "User_Close.svg"
+        
+        src: UserClose
     },
     {
-        src: "User_Check.svg"
+        src:UserCheck
+       
     },
     {
-        src: "User_Voice.svg"
+        src:UserVoice
+      
     },
     {
-        src: "Mail.svg"
+        src:Mail
+  
     }
 ]

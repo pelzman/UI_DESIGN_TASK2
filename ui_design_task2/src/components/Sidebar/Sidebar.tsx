@@ -8,7 +8,7 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 
-const Sidebar = () => {
+const Sidebar:React.FC = () => {
     const location = useLocation()
     const [open, setOpen] = useState(true)
 
@@ -36,7 +36,7 @@ const Sidebar = () => {
             
               `} >
                                 <div className='shrink-0'>
-                                    <img src={`./src/assets/${link.src}`} alt="" className={` w-[30px] h-[30px] lg:w-[48px] lg:h-[48px `} />
+                                    <img src={link.src} alt="" className={` w-[30px] h-[30px] lg:w-[48px] lg:h-[48px `} />
                                 </div>
 
 
@@ -49,7 +49,7 @@ const Sidebar = () => {
 
             </ul>
 
-            <ul className='list pt-28 md:mt-auto'>
+            <ul className='list pt-16 md:mt-auto'>
                 {
                     OtherLinks.map((link, index) => (
 
@@ -59,7 +59,7 @@ const Sidebar = () => {
                 
               
                 `} >     <div className='shrink-0 ' >
-                                    <img src={`./src/assets/${link.src}`} alt="" className={` w-[30px] h-[30px] lg:w-[48px] lg:h-[48px] `} />
+                                    <img src={link.src} alt="" className={` w-[30px] h-[30px] lg:w-[48px] lg:h-[48px] `} />
                                 </div>
 
 

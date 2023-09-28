@@ -61,7 +61,7 @@ const Navbar: React.FC<MenuProps> = () => {
 
                                 Icons.map((icon, index) => (
                                     <div key={index} className="lg:my-auto  lg:p-[8px] lg:rounded-lg  border-[#ECECEC] lg:shadow-sm lg:bg-[#FFF] shrink-0 flex">
-                                        <img src={`./src/assets/${icon.src}`} alt="" className="flex" />
+                                        <img src={icon.src} alt="" className="flex" />
                                     </div>
                                 ))
 

@@ -3,13 +3,14 @@
 import Sidebar from "../Sidebar/Sidebar"
 import Navbar from '../Navbar/Navbar'
 import { Outlet } from 'react-router-dom'
+import React from "react"
 
 export interface DashboardLinkProps {
     link: {
 
         label?: string
         path?: string
-        src?: string,
+        src: string | unknown,
 
     }
 }
